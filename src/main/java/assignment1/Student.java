@@ -18,5 +18,21 @@ public class Student {
         DOB = InDOB;
         ID = InID;
     }
-
+    
+    
+    //returns username as specified in the requirements
+    public String getUsername(){
+        return name+DOB;
+    }
+    
+    //add module to student
+    public void addModule (Module mod){
+        takingModules.add(mod);
+    }
+    
+    //add course to student
+    public void addCourse(CourseProgramme course){
+        enrolledCourses.add(course);
+    }
+    
 }
