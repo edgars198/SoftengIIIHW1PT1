@@ -14,7 +14,7 @@ public class Module {
     }
     //add arraylist of studetns that are taking the module
     public void addStudent(ArrayList<Student> IncomingStudents){
-        studentsTakingClass.add(stu);
+        this.studentsTakingClass = IncomingStudents;
     }
     //add courses that are connected to the module
     public void addCourses(CourseProgramme course){
