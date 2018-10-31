@@ -1,5 +1,4 @@
 package assignment1;
-import java.util.*;
 
 public class Student {
     String name;
@@ -7,8 +6,6 @@ public class Student {
     String DOB;
     int ID;
     String username;
-    ArrayList<Module> takingModules = new ArrayList();
-    ArrayList<CourseProgramme> enrolledCourses = new ArrayList();
     
     
     //constructor
@@ -24,15 +21,12 @@ public class Student {
     public String getUsername(){
         return name+DOB;
     }
+
     
-    //add module to student
-    public void addModule (Module mod){
-        takingModules.add(mod);
-    }
+    @Override
+    public String toString(){
+        return (ID+" "+name+" "+username);
     
-    //add course to student
-    public void addCourse(CourseProgramme course){
-        enrolledCourses.add(course);
     }
     
 }
