@@ -19,8 +19,8 @@ public class CourseProgramme {
       enrolledStudents.add(stu);  
     }
     //add module to course
-    public void addModules (Module mod){
-        listOfModules.add(mod);
+    public void addModules (ArrayList<Module> modulesOfCourse){
+        this.listOfModules = modulesOfCourse;
     }
     //add start time of the course  
     public void startTime (DateTime time){
