@@ -30,14 +30,16 @@ public class CourseProgramme {
     public void endTime (DateTime time){
         academicEndDate = time;
     }
+    
     @Override
     public String toString(){
     
         String toPrint;
-        toPrint = ("Course name: "+CourseName+" Modules associated : ");
+        toPrint = ("Course name: "+this.CourseName+" Modules associated : ");
         
-        toPrint.concat(listOfModules.toString());
-        
+        for (Module number : listOfModules) {
+            toPrint.concat(number.toString()).concat("\n");
+        }
         
         return(toPrint);
     }

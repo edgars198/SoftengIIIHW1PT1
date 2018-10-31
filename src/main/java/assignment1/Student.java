@@ -1,11 +1,11 @@
 package assignment1;
 
 public class Student {
-    String name;
-    int age;
-    String DOB;
-    int ID;
-    String username;
+    private String name;
+    private int age;
+    private String DOB;
+    private int ID;
+    private String username;
     
     
     //constructor
@@ -25,7 +25,7 @@ public class Student {
     
     @Override
     public String toString(){
-        return (ID+" "+name+" "+username);
+        return (this.ID+" "+this.name+" "+this.username);
     
     }
     

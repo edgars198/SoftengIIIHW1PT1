@@ -2,9 +2,9 @@ package assignment1;
 import java.util.*;
 
 public class Module {
-    String moduleName;
-    String ID;
-    ArrayList<Student> studentsTakingClass = new ArrayList();
+    private String moduleName;
+    private String ID;
+    private ArrayList<Student> studentsTakingClass = new ArrayList();
 
     
     //constrructor
@@ -19,12 +19,12 @@ public class Module {
     
     @Override
     public String toString(){
-    
         String toPrint;
-        toPrint = ("Module name: "+moduleName+" Module ID: "+ID+"\n"+"Students Enrolled: ");
+        toPrint = ("Module name: "+this.moduleName+" Module ID: "+this.ID+"\n"+"Students Enrolled: ");
         
-        toPrint.concat(studentsTakingClass.toString());
-        
+        for (Student number : studentsTakingClass) {
+            toPrint.concat(number.toString()).concat("\n");
+        }
         
         return(toPrint);
     }
