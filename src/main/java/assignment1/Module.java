@@ -4,16 +4,16 @@ import java.util.*;
 public class Module {
     String moduleName;
     String ID;
-    ArrayList studentsTakingClass = new ArrayList();
-    ArrayList coursesAssociated = new ArrayList();
+    ArrayList<Student> studentsTakingClass = new ArrayList();
+    ArrayList<CourseProgramme> coursesAssociated = new ArrayList();
     
     //constrructor
     public Module (String modName, String IID){
         moduleName = modName;
         ID = IID;
     }
-    //add studetns that aretaking the module
-    public void addStudent(Student stu){
+    //add arraylist of studetns that are taking the module
+    public void addStudent(ArrayList<Student> IncomingStudents){
         studentsTakingClass.add(stu);
     }
     //add courses that are connected to the module

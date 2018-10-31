@@ -7,8 +7,8 @@ public class Student {
     String DOB;
     int ID;
     String username;
-    ArrayList takingModules = new ArrayList();
-    ArrayList enrolledCourses = new ArrayList();
+    ArrayList<Module> takingModules = new ArrayList();
+    ArrayList<CourseProgramme> enrolledCourses = new ArrayList();
     
     
     //constructor

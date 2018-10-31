@@ -5,8 +5,8 @@ import org.joda.time.DateTime;
 
 public class CourseProgramme {
     String CourseName;
-    ArrayList listOfModules = new ArrayList();
-    ArrayList enrolledStudents = new ArrayList();
+    ArrayList<Module> listOfModules = new ArrayList();
+    ArrayList<Student> enrolledStudents = new ArrayList();
     DateTime academicStartDate = new DateTime();
     DateTime academicEndDate = new DateTime();
     
